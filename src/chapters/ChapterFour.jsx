@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ChapterHeading from "../components/ChapterHeading";
-import { MedinaArt, RouteMap, Spark } from "../components/Illustrations";
+import { MadinahLight, RouteMap, Spark } from "../components/Illustrations";
 import StoryButton from "../components/StoryButton";
 import StoryChapter from "../components/StoryChapter";
 import { cities } from "../copy";
@@ -14,9 +14,9 @@ export default function ChapterFour({ onNext }) {
         {cities.title}
       </ChapterHeading>
       <RouteMap />
-      <article className="medina-card">
-        <MedinaArt />
-        <div className="medina-copy">
+      <article className="madinah-card">
+        <MadinahLight />
+        <div className="madinah-copy">
           <h2>{cities.cardTitle}</h2>
           <p>{cities.card}</p>
         </div>

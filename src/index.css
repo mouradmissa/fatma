@@ -568,15 +568,16 @@ h1:focus {
   animation: travel 5.6s ease-in-out infinite alternate;
 }
 
-.medina-card {
+.madinah-card {
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 1.4rem;
-  background: rgba(6, 18, 14, 0.55);
+  background: linear-gradient(180deg, #f7fbf8 0%, #e7f4ec 100%);
+  color: #14392c;
   text-align: center;
 }
 
-.medina-art {
+.madinah-art {
   display: block;
   width: 100%;
   height: auto;
@@ -586,20 +587,21 @@ h1:focus {
   animation: glow 3.6s ease-in-out infinite;
 }
 
-.medina-copy {
-  padding: 0.95rem 1rem 1.15rem;
+.madinah-copy {
+  padding: 0.95rem 1.1rem 1.2rem;
 }
 
-.medina-copy h2 {
+.madinah-copy h2 {
   margin: 0 0 0.45rem;
-  color: var(--ivory);
+  color: #0e3d2c;
   font-family: var(--display);
   font-size: 1.35rem;
   line-height: 1.5;
 }
 
-.medina-copy p {
+.madinah-copy p {
   margin: 0;
+  color: #1a4334;
   line-height: 1.95;
 }
 

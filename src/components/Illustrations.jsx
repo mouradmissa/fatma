@@ -96,46 +96,38 @@ export function RouteMap() {
   );
 }
 
-export function MedinaArt() {
+export function MadinahLight() {
   return (
-    <svg className="medina-art" viewBox="0 0 640 340" role="img" aria-label="قبة خضراء وقوس من المدينة العتيقة">
+    <svg
+      className="madinah-art"
+      viewBox="0 0 640 340"
+      role="img"
+      aria-label="أجواء خضراء وبيضاء مستوحاة من حلم زيارة المدينة المنوّرة"
+    >
       <defs>
-        <linearGradient id="medina-sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#16382c" />
-          <stop offset="100%" stopColor="#07140f" />
+        <linearGradient id="madinah-sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#f7fbf8" />
+          <stop offset="100%" stopColor="#d7efe3" />
         </linearGradient>
-        <linearGradient id="medina-dome" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#49c48f" />
-          <stop offset="55%" stopColor="#1c8a5c" />
-          <stop offset="100%" stopColor="#0d5a3e" />
+        <linearGradient id="madinah-dome" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#46c48c" />
+          <stop offset="48%" stopColor="#14915c" />
+          <stop offset="100%" stopColor="#0c6a44" />
         </linearGradient>
-        <radialGradient id="medina-lamp" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#fff1cf" />
-          <stop offset="100%" stopColor="#d4af37" />
+        <radialGradient id="madinah-glow" cx="50%" cy="46%" r="46%">
+          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.95" />
+          <stop offset="68%" stopColor="#ffffff" stopOpacity="0.2" />
+          <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
         </radialGradient>
       </defs>
-      <rect width="640" height="340" fill="url(#medina-sky)" />
-      <circle cx="520" cy="58" r="16" fill="#f0e2c0" opacity="0.9" />
-      <circle cx="526" cy="54" r="14" fill="#16382c" />
-      <path d="M36 262 V188 H84 V154 H124 V198 H168 V262 Z" fill="#0c221b" />
-      <path d="M472 262 V176 H518 V140 H558 V186 H612 V262 Z" fill="#0c221b" />
-      <rect x="228" y="132" width="184" height="20" rx="3" fill="#0e4d38" />
-      <path className="dome-glow" d="M244 136 C244 46 396 46 396 136 Z" fill="url(#medina-dome)" />
-      <rect x="314" y="38" width="8" height="16" fill="#e6d3a1" />
-      <circle cx="318" cy="34" r="6" fill="none" stroke="#e6d3a1" strokeWidth="2" />
-      <path
-        d="M108 286 V176 C108 148 532 148 532 176 V286"
-        fill="none"
-        stroke="#e6d3a1"
-        strokeWidth="3"
-      />
-      <path d="M168 286 V196 C168 164 472 164 472 196 V286" fill="#10261f" stroke="#d4af37" strokeWidth="2" />
-      <path d="M286 286 V226 C286 198 354 198 354 226 V286" fill="#081610" stroke="#f0e2c0" strokeWidth="2" />
-      <circle cx="96" cy="196" r="4" fill="url(#medina-lamp)" />
-      <circle cx="150" cy="214" r="3.5" fill="url(#medina-lamp)" />
-      <circle cx="488" cy="206" r="4" fill="url(#medina-lamp)" />
-      <circle cx="548" cy="176" r="3.5" fill="url(#medina-lamp)" />
-      <rect x="0" y="278" width="640" height="62" fill="#07110d" />
+      <rect width="640" height="340" fill="url(#madinah-sky)" />
+      <circle cx="320" cy="176" r="148" fill="url(#madinah-glow)" />
+      <rect x="248" y="198" width="144" height="70" fill="#fbfefc" />
+      <path className="dome-glow" d="M248 200 C248 112 392 112 392 200 Z" fill="url(#madinah-dome)" />
+      <rect x="248" y="194" width="144" height="7" fill="#e6d3a1" />
+      <rect x="317" y="118" width="6" height="16" rx="1" fill="#e6d3a1" />
+      <circle cx="320" cy="114" r="5" fill="#f4e7c4" />
+      <rect x="0" y="268" width="640" height="72" fill="#f4faf6" />
     </svg>
   );
 }
